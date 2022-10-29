@@ -1,0 +1,168 @@
+/* ! Global */
+/* Libre Franklin font (300, 600, 700) */
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap');
+:root {
+    --blue: hsl(223, 87%, 63%);
+    --pale-blue: hsl(223, 100%, 88%);
+    --light-red: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --very-dark-blue: hsl(209, 33%, 12%);
+}
+* {
+    margin:0;
+    padding:0;
+    border:0;
+}
+body {
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    color: var(--very-dark-blue);
+    min-height: 100vh;
+    margin: 2rem 5rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* ? Header */
+header h1 {
+    color: var(--gray);
+    font-weight: 300;
+    margin-top: 1.5rem;
+}
+header h1 span {
+    color: var(--very-dark-blue);
+    font-weight: 700;
+}
+header p {
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 1rem;   
+}
+header form {
+    display: flex;
+    margin-top: 2rem;
+    gap: 1rem;
+    position: relative;
+}
+header form input[type="email"] {
+    flex: 2;
+    height: 40px;
+    border-radius: 25px;
+    border: var(--pale-blue) 1px solid;
+    padding-left: 1.5rem;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.666);
+    font-weight: 300; 
+    outline: none;
+}
+header form input[type="email"]::placeholder {
+    color: var(--pale-blue);
+    font-weight: 300;
+    font-family: "Libre Franklin", sans-serif;
+    font-size: 15px;
+}
+header form .notify {
+    flex: 1;
+    background-color: var(--blue);
+    color: white;
+    font-weight: 600;
+    border-radius: 25px;
+}
+/* ? Main */
+main {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+}
+main img {
+    width: 50%;
+}
+/* ? Socials */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+footer .socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+footer .socials i {
+    box-shadow: -1px 5px 15px 1px rgba(0, 0, 0, 0.13);
+    padding: 0.5rem;
+    margin-left: 3px;
+    color: var(--blue);
+    border-radius: 50%;
+}
+footer p {
+    color: var(--gray);
+    font-size: 12px;
+    margin-top: 1.5rem;
+}
+/* ! Hover states */
+header form .notify:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+footer .socials i:hover {
+    background-color: var(--blue);
+    color: white;
+    cursor: pointer;
+}
+/* ! Error messages */
+header #email-input-error-message {
+    color: var(--light-red);
+    font-size: 11px;
+    font-style: italic;;
+    top: 35px;
+    left: 25px;
+    position: absolute;
+    display: none;
+}
+/* ! Media Queries */
+@media screen and (max-width: 768px) {
+    /* ? Header */
+    header form {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    header form input[type="email"] {
+        flex: none;
+    }
+    header form .notify {
+        flex: none;
+        height: 40px;
+    } 
+    /* ! Error messages */
+    header #email-input-error-message {
+        color: var(--light-red);
+        font-size: 11px;
+        font-style: italic;
+        top: 30px;
+        left: 25%;
+        position: absolute;
+        display: none;
+    }
+}
+@media screen and (max-width: 460px) {
+    /* ! Error messages */
+    header #email-input-error-message {
+        left: 25%;
+    }
+    body {
+        margin: 2rem 2rem;
+    }
+}
+@media screen and (max-width: 370px) {
+    body {
+        margin: 2rem 1rem;
+    }
+}
