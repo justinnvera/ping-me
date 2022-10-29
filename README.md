@@ -40,8 +40,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da/hub/ping-single-column-coming-soon-page-YoBrPSE-K7/edit)
-- Live Site URL: [Add live site URL here](https://ping-me-tan.vercel.app)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/challenges/ping-single-column-coming-soon-page-5cadd051fec04111f7b848da/hub/ping-single-column-coming-soon-page-YoBrPSE-K7/edit)
+- Live Site URL: [Vercel](https://ping-me-tan.vercel.app)
 
 ## My process
 
